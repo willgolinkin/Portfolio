@@ -1,43 +1,107 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
-    color: #444;
-    text-align: center;
-    line-height: 1.5;
-  }
-  
-  nav,
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-  
-  
-  
-  header {
-    padding: 12% 0;
-  }
-  
-  section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
-  }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: rgb(22, 157, 219);
+  width: 100%;
+  color: white;
+}
+
+
+nav {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*z-index: 10;
+  /*from bloc website*/
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  padding: 10% 0;
+  margin-top: 20px;
+}
+
+/*.img-container {
+  background-image: url(https://i.imgur.com/h4Nx8OF.jpg);
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.inner-container {
+  text-align: center;
+  position: abolute;
+  width: 100%;
+  color: white;
+  height: auto;
+  margin-top: 50px;
+}*/
+
+section {
+  min-height: 100px;
+  padding: 6% 0;
+  background-color: whitesmoke;
+}
+
+section:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+
+.view_projects_button {
+margin-left: auto;
+margin-right: auto;
+display: flex;
+padding: 20px;
+border: none;
+background-color: rgb(26, 27, 27);
+color: #ffffff;
+font-size: 20px;
+text-transform: uppercase;
+border-radius: 0;
+cursor: pointer;
+transition: all 0.3s ease;
+margin-top: 40px;
+margin-bottom: 50px;
+}
