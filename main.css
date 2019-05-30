@@ -55,6 +55,14 @@ a:visited {
   color: white;
 }
 
+h1 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   padding: 10% 0;
   margin-top: 20px;
@@ -94,9 +102,10 @@ section:nth-child(even) {
 margin-left: auto;
 margin-right: auto;
 display: flex;
+flex: 1 1 auto;
 padding: 20px;
 border: none;
-background-color: rgb(26, 27, 27);
+background-color: rgba(26, 27, 27, 0.733);
 color: #ffffff;
 font-size: 20px;
 text-transform: uppercase;
@@ -105,6 +114,7 @@ cursor: pointer;
 transition: all 0.3s ease;
 margin-top: 40px;
 margin-bottom: 50px;
+border-radius: 5%;
 }
 
 .btn-group {
@@ -114,18 +124,19 @@ margin-bottom: 50px;
 .github, .web-page {
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
+  display: block;
   padding: 20px;
   border: none;
-  background-color: rgb(26, 27, 27);
+  background-color: rgba(26, 27, 27, 0.733);
   color: #ffffff;
   font-size: 20px;
   text-transform: uppercase;
-  border-radius: 0;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 50px;
   margin-bottom: 50px;
+  min-width: 40%;
+  border-radius: 5%;
   }
 
   .screenshot-container {
@@ -135,3 +146,62 @@ margin-bottom: 50px;
   img {
     width: 70%;
   }
+
+  /* for any screen larger than 520px*/
+  @media screen and (min-width: 520px) {
+  
+    /*.menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }*/
+
+    /*header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }*/
+
+    /*.logo {
+      justify-content: flex-end;
+      flex-grow: 1;
+      /*this achieves the right result with margin, but makes the header off-center*/
+    
+
+    /*h1 {
+      flex-grow: 1;
+      justify-content: center;
+    }*/
+
+    footer {
+      border-top: 2px solid rgba(128, 128, 128, 0.281);
+      width: 100%;
+      margin-top: 2px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .github, .web-page {
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+      /*display: flex;
+      flex: 0 1 initial;*/
+      padding: 20px;
+      border: none;
+      background-color: rgba(26, 27, 27, 0.733);
+      color: #ffffff;
+      font-size: 20px;
+      text-transform: uppercase;
+      border-radius: 5%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      min-width: 40%;
+    }
+
+    .view_projects_button {
+      flex-grow: 2;
+}
