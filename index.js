@@ -15,8 +15,8 @@ function generateProject () {
             </div>
         </div>
         <div class="screenshot-container">
-            <img src= ${STORE[projectNumber].screenshot_one}>
-            <img src= ${STORE[projectNumber].screenshot_two}>
+            <img src= "${STORE[projectNumber].screenshot_one}" alt="screenshotOne">
+            <img src= "${STORE[projectNumber].screenshot_two}" atl="screenshotTwo">
         </div>
         <button type="submit" class="returnHomeButton">Home</button>
     </div>`
