@@ -18,6 +18,7 @@ function generateProject () {
             <img src= ${STORE[projectNumber].screenshot_one}>
             <img src= ${STORE[projectNumber].screenshot_two}>
         </div>
+        <button type="submit" class="returnHomeButton">Home</button>
     </div>`
     } else {
         returnToHomePage ();
@@ -32,10 +33,11 @@ function changeProjectNumber () {
 //hide about section
 //unhide/show project div
 function viewProject () {
-    $('.about').on('click', '.view_projects_button', function(event) {
+    $('.about').on('click', '.viewProjectsButton', function(event) {
         $('.about').remove();
         //not sure if this adds value for this script
-        $('.project').css('display', 'block');
+        //$('.project').css('display', 'block');
+        renderProject();
     });
 }
 
@@ -44,20 +46,24 @@ function renderProject () {
   $('.project').html(generateProject());
 }
 
-function renderNextProject () {
+/*function renderNextProject () {
     console.log('going to next project');
     //add event listener for click of next project and generate next project html
-}
+}*/
 
 function returnToHomePage () {
-    console.log('returning to Home Page');
-    //add event listener for click of home page button and reload home page
+    //console.log('returning to Home Page');
+    $('main').on('click', '.returnHomeButton', function (event) {
+        console.log ('returning home');
+        //reloads the current resource, like the refresh button; could be improved
+        location.reload(true);
+    });
 }
 
 function showProjects () {
     viewProject ();
-    renderProject ();
-    renderNextProject ();
+    //renderProject ();
+    //renderNextProject ();
     returnToHomePage ();
 }
 
