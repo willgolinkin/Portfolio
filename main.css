@@ -62,6 +62,8 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   height: 80px;
+  /*ensures navbar scrolls over hero image*/
+  z-index: 1000;
 }
 
 li {
