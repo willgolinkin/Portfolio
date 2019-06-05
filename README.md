@@ -1,11 +1,8 @@
 goals for HTML/CSS:
--add js for projects in top nav
--add hero image with responsive design (either flexbox or media query)
--add flexbox for buttons
--add icons or hamburger for bottom nav contact info
--maintain contact info near bio as a section
+-add js for projects in top nav (once I have a lot of them)
+-add flexbox for buttons (set width worked better)
+-add skills used section to project with icons (html, css, javascript, jQuery)
 
 js structure:
--hide bio and render first project on click
--use next button to see all work on a page by page basis
+-will need to build out next button and 'renderNextProject' function once I have more than one project IOT see all work on a page by page basis
 -potentially use hamburger for topnav using JS

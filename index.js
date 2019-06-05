@@ -1,6 +1,7 @@
 let projectNumber = 0;
 
 //access and add project information from STORE
+//create three buttons, two of which contain links and are styled as buttons
 function generateProject () {
     if (projectNumber < STORE.length) {
         let project = STORE[projectNumber];
