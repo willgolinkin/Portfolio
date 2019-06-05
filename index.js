@@ -11,13 +11,9 @@ function generateProject () {
                 ${project.description}
             </p>
             <div class = "btn-group">
-                <form action="${project.github_repo}" class="github">
-                    <input type="submit" value="Github Repo"/>
-                </form>
-                <form action="${project.web_page}" class="web-page">
-                    <input type="submit" value="Live Page"/>
-                </form>
-            </div>
+                <a href="${project.github_repo}" target="_blank" class="github">Github Repo</a>
+                <a href="${project.web_page}" target="_blank" class="web-page">Live Page</a>   
+            </div> 
         </div>
         <div class="screenshot-container">
             <img src= "${project.screenshot_one}" alt="screenshotOne">
