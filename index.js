@@ -3,20 +3,25 @@ let projectNumber = 0;
 //access and add project information from STORE
 function generateProject () {
     if (projectNumber < STORE.length) {
-        return `<div class= ${STORE[projectNumber].project}>
+        let project = STORE[projectNumber];
+        return `<div class= ${project.project_div}>
         <div class="project-description">
-            <h1 class="js-title">${STORE[projectNumber].title}</h1>
+            <h1 class="js-title">${project.title}</h1>
             <p class="js-description">
-                ${STORE[projectNumber].description}
+                ${project.description}
             </p>
             <div class = "btn-group">
-                <button class="github">Github Repo</button>
-                <button class="web-page">Web Page</button>
+                <form action="${project.github_repo}" class="github">
+                    <input type="submit" value="Github Repo"/>
+                </form>
+                <form action="${project.web_page}" class="web-page">
+                    <input type="submit" value="Live Page"/>
+                </form>
             </div>
         </div>
         <div class="screenshot-container">
-            <img src= "${STORE[projectNumber].screenshot_one}" alt="screenshotOne">
-            <img src= "${STORE[projectNumber].screenshot_two}" atl="screenshotTwo">
+            <img src= "${project.screenshot_one}" alt="screenshotOne">
+            <img src= "${project.screenshot_two}" atl="screenshotTwo">
         </div>
         <button type="submit" class="returnHomeButton">Home</button>
     </div>`
@@ -68,3 +73,4 @@ function showProjects () {
 }
 
 $(showProjects);
+//potentially bring everything underneath the showProjects function IOT eliminate global variables
