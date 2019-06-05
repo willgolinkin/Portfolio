@@ -61,6 +61,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  height: 80px;
 }
 
 li {
@@ -70,6 +71,22 @@ li {
   padding-left: 5px;
   padding-right: 5px;
   color: white;
+}
+
+a[href*="gmail.com"] {
+  background: transparent url("Img Assets\\Gmail_Logo_30_30_compressed.png") center right no-repeat;
+  padding-right: 35px;
+}
+
+a[href*="github.com"] {
+  background: transparent url("Img Assets\\GitHub-Logo_30_30_compressed.png") center right no-repeat;
+  padding-right: 35px;
+}
+
+a[href*="linkedin.com"] {
+  background: transparent url("Img Assets\\LinkedIn_img_30_30_compressed.png") center right no-repeat;
+  padding-right: 35px;
+  /*overflow: visible;*/
 }
 
 footer {
