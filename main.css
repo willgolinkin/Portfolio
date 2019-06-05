@@ -66,6 +66,16 @@ nav {
   z-index: 1000;
 }
 
+.nav_links {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+}
+
 li {
   display: inline-block;
   text-transform: uppercase;
@@ -75,6 +85,12 @@ li {
   color: white;
 }
 
+.fa-github-square {
+  padding-left:40px;
+  padding-right: 40px;
+}
+
+/*alternative way of using saved images as icons
 a[href*="gmail.com"] {
   background: transparent url("Img Assets\\Gmail_Logo_30_30_compressed.png") center right no-repeat;
   padding-right: 35px;
@@ -88,8 +104,8 @@ a[href*="github.com"] {
 a[href*="linkedin.com"] {
   background: transparent url("Img Assets\\LinkedIn_img_30_30_compressed.png") center right no-repeat;
   padding-right: 35px;
-  /*overflow: visible;*/
-}
+  overflow: visible;
+}*/
 
 footer {
   font-size: 25px;
@@ -149,6 +165,8 @@ border-radius: 2%;
 }
 
 .github, .web-page {
+  -webkit-appearance: button;
+  /*text-decoration: none;*/
   margin-left: auto;
   margin-right: auto;
   /*display: flex;
