@@ -16,6 +16,7 @@ body, html {
 
 main {
   line-height: 150%;
+  background-color: #fafafa;
 }
 
 .hero-image {
@@ -24,7 +25,10 @@ main {
   height: 300px;
   /*allows for cutting of image with resizing*/  
   overflow: hidden;
-  background-image: url("Img Assets\\torrey-pines-list-image_compressed.jpg");
+  /*background-image: url("Img Assets\\san-diego-skyline-at-night_hero_img_compressed.jpg");*/
+  /*background-image: url("Img Assets\\torrey-pines-list-image_compressed.jpg");*/
+  background-image: url("Img Assets\\Louis Braddock (Joseph W. Golinkin)_hero_image_compressed.jpg");
+  /*background-image: url("Img Assets\\Torrey-Pines-Bluff-1233x860_compressed.jpg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,8 +37,8 @@ main {
 .container {
   font-family: 'Merriweather Sans', sans-serif;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 37%;
+  left: 53%;
   transform: translate(-50%, -50%);
   overflow: hidden;
   text-align: center;
@@ -52,7 +56,7 @@ main {
 nav,
 footer {
   padding: 1% 0;
-  background-color: rgb(22, 157, 219);
+  background-color:#0d47a1;
   width: 100%;
   color: white;
   border-radius: 1%;
@@ -157,7 +161,7 @@ display: flex;
 flex: 1 1 auto;
 padding: 20px;
 border: none;
-background-color: rgba(26, 27, 27, 0.733);
+background-color:orange;
 color: #ffffff;
 font-size: 20px;
 font-weight: bold;
@@ -186,7 +190,7 @@ border-radius: 2%;
   display: block;
   padding: 20px;
   border: none;
-  background-color: rgba(26, 27, 27, 0.733);
+  background-color: orange;
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
@@ -206,7 +210,7 @@ border-radius: 2%;
   display: block;
   padding: 20px;
   border: none;
-  background-color: rgba(26, 27, 27, 0.733);
+  background-color:orange;
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
@@ -226,18 +230,19 @@ border-radius: 2%;
 
 img {
   width: 90%;
+  border: 1px solid black;
 }
 
 /* for any screen larger than 630px*/
 @media screen and (min-width: 630px) {
 
-  footer {
+  /*footer {
     border-top: 2px solid rgba(128, 128, 128, 0.281);
     width: 100%;
     margin-top: 2px;
     margin-left: 0;
     margin-right: 0;
-  }
+  }*/
 
   .btn-group {
     width: 70%;
@@ -251,7 +256,7 @@ img {
     display: inline-block;
     padding: 20px;
     border: none;
-    background-color: rgba(26, 27, 27, 0.733);
+    background-color: orange;
     color: #ffffff;
     font-size: 20px;
     text-transform: uppercase;
