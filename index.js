@@ -8,6 +8,9 @@ function generateProject () {
         return `<div class= ${project.project_div}>
         <div class="project-description">
             <h1 class="js-title">${project.title}</h1>
+            <ul class="project_tech">
+                ${project.technologies_used}
+            </ul>
             <p class="js-description">
                 ${project.description}
             </p>
