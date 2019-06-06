@@ -25,10 +25,8 @@ main {
   height: 300px;
   /*allows for cutting of image with resizing*/  
   overflow: hidden;
-  /*background-image: url("Img Assets\\san-diego-skyline-at-night_hero_img_compressed.jpg");*/
-  /*background-image: url("Img Assets\\torrey-pines-list-image_compressed.jpg");*/
-  background-image: url("Img Assets\\Louis Braddock (Joseph W. Golinkin)_hero_image_compressed.jpg");
-  /*background-image: url("Img Assets\\Torrey-Pines-Bluff-1233x860_compressed.jpg");*/
+  /*adds black tint to image to make text stand out*/
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("Img Assets\\Louis Braddock (Joseph W. Golinkin)_hero_image_compressed.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,7 +119,7 @@ a[href*="linkedin.com"] {
 }*/
 
 footer {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -142,6 +140,14 @@ h1, h2 {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 section {
@@ -255,6 +261,14 @@ img {
   .github, .web-page {
     display: inline-block;
     width: 250px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+  
+  h2 {
+    font-size: 25px;
   }
 
   /*.returnHomeButton {
