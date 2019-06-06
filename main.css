@@ -169,7 +169,7 @@ text-transform: uppercase;
 border-radius: 0;
 cursor: pointer;
 transition: all 0.3s ease;
-margin-top: 40px;
+margin-top: 50px;
 margin-bottom: 50px;
 border-radius: 2%;
 }
@@ -198,10 +198,19 @@ border-radius: 2%;
   border-radius: 0;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  /*margin-top: 40px;
+  margin-bottom: 50px;*/
   border-radius: 2%;
   width: 225px;
+}
+
+.github {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.web-page {
+  margin-bottom: 50px;
 }
 
 .returnHomeButton {
@@ -236,14 +245,6 @@ img {
 /* for any screen larger than 630px*/
 @media screen and (min-width: 630px) {
 
-  /*footer {
-    border-top: 2px solid rgba(128, 128, 128, 0.281);
-    width: 100%;
-    margin-top: 2px;
-    margin-left: 0;
-    margin-right: 0;
-  }*/
-
   .btn-group {
     width: 70%;
     margin-left: auto;
@@ -251,36 +252,23 @@ img {
   }
 
   .github, .web-page {
-    margin-left: auto;
-    margin-right: auto;
     display: inline-block;
-    padding: 20px;
-    border: none;
-    background-color: orange;
-    color: #ffffff;
-    font-size: 20px;
-    text-transform: uppercase;
-    border-radius: 0;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    border-radius: 2%;
     width: 250px;
   }
 
-  .returnHomeButton {
+  /*.returnHomeButton {
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
     max-width: 250px;
-  }
+  }*/
 
   .bio, .js-description {
     margin-left: auto;
     margin-right: auto;
     width: 600px;
+    margin-bottom: 0;
   }
 
   img {
