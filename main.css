@@ -86,6 +86,10 @@ nav {
   font-size: 30px;
 }
 
+.project-tech {
+  flex-grow: .25;
+}
+
 .project_tech li {
   /*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
   margin-top: 10px;
