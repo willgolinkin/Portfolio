@@ -2,6 +2,10 @@ const STORE = [
     {
         project_div: "Project 1",
         title: "USMC Quiz App",
+        technologies_used: 
+        `<li><i class="fab fa-html5"></i></li>
+        <li><i class="fab fa-js"></i></li>
+        <li><i class="fab fa-css3-alt"></i></li>`,
         description: "The USMC quiz app allows you to test your knowledge of America\'s 24/7 amphibous force in readiness. The questions are appropriate for beginners and seasoned veterans alike. Good luck!",
         github_repo: "https://github.com/willgolinkin/interactive_USMC_quiz_app",
         web_page: "https://willgolinkin.github.io/interactive_USMC_quiz_app/",

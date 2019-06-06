@@ -3,19 +3,18 @@
 }
 
 body, html {
-  /*font-family: "Open Sans",
-  sans-serif;*/
   font-family: 'Karla', sans-serif; 
   color: #444;
   text-align: center;
-  /*line-height: 1.5;*/
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 main {
+  /*sets line spacing to desired range of 120-150%*/
   line-height: 150%;
+  /*off-white background-color for contrast with screenshots*/
   background-color: #fafafa;
 }
 
@@ -77,7 +76,7 @@ nav {
   z-index: 1000;
 }
 
-.nav_links {
+.nav_links, .project_tech {
   padding: 0;
   display: flex;
   justify-content: space-evenly;
@@ -85,6 +84,15 @@ nav {
   flex-direction: row;
   align-items: center;
   font-size: 30px;
+}
+
+.project_tech li {
+  /*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
+  margin-top: 10px;
+  /*allows me to color and size font awesome icons*/
+  color: #0d47a1;
+  text-shadow: 1px 1px 1px white;
+  font-size: 1.0em;
 }
 
 li {
