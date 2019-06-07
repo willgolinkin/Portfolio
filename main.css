@@ -198,7 +198,7 @@ border-radius: 2%;
 }
 
 .github, .web-page {
-  -webkit-appearance: button;
+  /*-webkit-appearance: button;*/
   /*text-decoration: none;*/
   margin-left: auto;
   margin-right: auto;
@@ -217,8 +217,6 @@ border-radius: 2%;
   border-radius: 0;
   cursor: pointer;
   transition: all 0.3s ease;
-  /*margin-top: 40px;
-  margin-bottom: 50px;*/
   border-radius: 2%;
   width: 225px;
 }
