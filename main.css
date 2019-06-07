@@ -219,6 +219,7 @@ border-radius: 2%;
   transition: all 0.3s ease;
   border-radius: 2%;
   width: 225px;
+  font-family: 'Merriweather', sans-serif;
 }
 
 .github {
