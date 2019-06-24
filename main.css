@@ -12,13 +12,13 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
+  /*off-white background-color for contrast with screenshots*/
+  background-color: #fafafa;
 }
 
 main {
   /*sets line spacing to desired range of 120-150%*/
   line-height: 150%;
-  /*off-white background-color for contrast with screenshots*/
-  background-color: #fafafa;
 }
 
 .hero-image {
@@ -250,7 +250,7 @@ border-radius: 2%;
 }
 
 .returnHomeButton {
-  display: inline-block;
+  /*display: inline-block;*/
   padding: 20px;
   border: none;
   background-color:orange;
@@ -261,7 +261,7 @@ border-radius: 2%;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 50px;
-  width: 250px;
+  width: 225px;
   border-radius: 2%;
 }
 
@@ -279,7 +279,7 @@ border-radius: 2%;
   transition: all 0.3s ease;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 250px;
+  width: 225px;
   border-radius: 2%;
 }
 
@@ -302,10 +302,23 @@ img {
     margin-right: auto;
   }
 
+  .next_home_group {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .github, .web-page {
     display: inline-block;
     width: 250px;
   }
+
+  .returnHomeButton, .nextProjectButton {
+    display: inline-block;
+    width: 250px;
+  }
+
+
 
   /*h1 {
     font-size: 35px;
