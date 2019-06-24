@@ -24,7 +24,7 @@ function generateProject () {
             <img src= "${project.screenshot_two}" atl="screenshotTwo">
         </div>
         <div class="next_home_group">
-            <button type="submit" class="nextProjectButton">Next Project</button>
+            <button id="nextProject" type="submit" class="nextProjectButton">Next Project</button>
             <button type="submit" class="returnHomeButton">Home</button>
         </div>
     </div>`
@@ -33,9 +33,17 @@ function generateProject () {
     }
 }
 
-//once I have additional projects, increment in order to display next project
+//increment in order to display next project
 function changeProjectNumber () {
     projectNumber ++;
+}
+
+//hides nextProjectButton if displaying last project in STORE
+function hideNextProjectButton() {
+    let nextProject = document.getElementById("nextProject");
+    if(projectNumber = STORE.length-1) {
+        $('#nextProject').addClass('hidden'); 
+    }
 }
 
 //hide about section
@@ -54,6 +62,7 @@ function renderProject () {
   $('.project').html(generateProject());
 }
 
+//render next project in STORE
 function renderNextProject () {
     console.log('going to next project');
     //add event listener for click of next project and generate next project html
@@ -61,6 +70,7 @@ function renderNextProject () {
         changeProjectNumber();
         generateProject();
         renderProject();
+        hideNextProjectButton();
     })
 }
 
@@ -75,7 +85,6 @@ function returnToHomePage () {
 
 function showProjects () {
     viewProject ();
-    //renderProject ();
     renderNextProject ();
     returnToHomePage ();
 }

@@ -260,6 +260,7 @@ border-radius: 2%;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 50px;
   margin-bottom: 50px;
   width: 225px;
   border-radius: 2%;
@@ -277,7 +278,6 @@ border-radius: 2%;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 50px;
   margin-bottom: 50px;
   width: 225px;
   border-radius: 2%;
@@ -291,6 +291,10 @@ border-radius: 2%;
 img {
   width: 90%;
   border: 1px solid black;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /* for any screen larger than 630px*/
