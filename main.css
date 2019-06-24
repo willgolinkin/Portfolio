@@ -260,6 +260,25 @@ border-radius: 2%;
   border-radius: 2%;
 }
 
+.nextProjectButton {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 20px;
+  border: none;
+  background-color:orange;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 225px;
+  border-radius: 2%;
+}
+
 .screenshot-container {
   display: block;
   text-align: center;
