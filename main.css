@@ -247,6 +247,7 @@ border-radius: 2%;
 
 .next_home_group {
   text-align: center;
+  margin-top: 50px;
 }
 
 .returnHomeButton {
@@ -260,7 +261,6 @@ border-radius: 2%;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 50px;
   margin-bottom: 50px;
   width: 225px;
   border-radius: 2%;
