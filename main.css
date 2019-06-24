@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  /*normalize CSS*/
+  margin: 0;
+  padding: 0;
 }
 
 body, html {
@@ -31,6 +34,7 @@ main {
   background-repeat: no-repeat;
 }
 
+/*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
 .container {
   font-family: 'Merriweather Sans', sans-serif;
   position: absolute;
@@ -50,16 +54,6 @@ main {
   font-size: 18px;
 }
 
-nav,
-footer {
-  padding: 1% 0;
-  background-color:#0d47a1;
-  width: 100%;
-  color: white;
-  border-radius: 1%;
-}
-
-
 nav {
   list-style: none;
   position: fixed;
@@ -72,6 +66,11 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   height: 80px;
+  background-color:#0d47a1;
+  width: 100%;
+  color: white;
+  border-radius: 1%;
+  padding: 1%, 0;
   /*ensures navbar scrolls over hero image*/
   z-index: 1000;
 }
@@ -133,6 +132,11 @@ a[href*="linkedin.com"] {
 footer {
   font-size: 16px;
   font-family: 'Merriweather Sans', sans-serif;
+  padding: 2%;
+  background-color:#0d47a1;
+  width: 100%;
+  color: white;
+  border-radius: 1%;
 }
 
 a:link {
@@ -155,11 +159,17 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 26px;
+  /*font-size: 26px;*/
+  font-size: calc(26px + (42 - 26) * ((100vw - 300px) / (1600 - 300)));
+  /*line-height also dyanmically re-sizing based on viewport*/
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 }
 
 h2 {
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+  /*line-height also dyanmically re-sizing based on viewport*/
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 }
 
 section {
@@ -274,13 +284,13 @@ img {
     width: 250px;
   }
 
-  h1 {
+  /*h1 {
     font-size: 35px;
-  }
+  }*/
   
-  h2 {
+  /*h2 {
     font-size: 25px;
-  }
+  }*/
 
   /*.returnHomeButton {
     display: flex;
