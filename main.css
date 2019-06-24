@@ -98,6 +98,10 @@ nav {
   font-size: 1.0em;
 }
 
+.js-description {
+  margin-top: 50px;
+}
+
 li {
   display: inline-block;
   text-transform: uppercase;
@@ -241,10 +245,12 @@ border-radius: 2%;
   margin-bottom: 50px;
 }
 
+.next_home_group {
+  text-align: center;
+}
+
 .returnHomeButton {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  display: inline-block;
   padding: 20px;
   border: none;
   background-color:orange;
@@ -254,16 +260,14 @@ border-radius: 2%;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 50px;
   margin-bottom: 50px;
-  width: 225px;
+  width: 250px;
   border-radius: 2%;
 }
 
 .nextProjectButton {
   margin-left: auto;
   margin-right: auto;
-  display: block;
   padding: 20px;
   border: none;
   background-color:orange;
@@ -275,7 +279,7 @@ border-radius: 2%;
   transition: all 0.3s ease;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 225px;
+  width: 250px;
   border-radius: 2%;
 }
 

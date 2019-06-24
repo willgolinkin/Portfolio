@@ -23,8 +23,10 @@ function generateProject () {
             <img src= "${project.screenshot_one}" alt="screenshotOne">
             <img src= "${project.screenshot_two}" atl="screenshotTwo">
         </div>
-        <button type="submit" class="nextProjectButton">Next Project</button>
-        <button type="submit" class="returnHomeButton">Home</button>
+        <div class="next_home_group">
+            <button type="submit" class="nextProjectButton">Next Project</button>
+            <button type="submit" class="returnHomeButton">Home</button>
+        </div>
     </div>`
     } else {
         returnToHomePage ();
@@ -55,6 +57,11 @@ function renderProject () {
 function renderNextProject () {
     console.log('going to next project');
     //add event listener for click of next project and generate next project html
+    $('main').on('click', '.nextProjectButton', function (event) {
+        changeProjectNumber();
+        generateProject();
+        renderProject();
+    })
 }
 
 function returnToHomePage () {
@@ -69,7 +76,7 @@ function returnToHomePage () {
 function showProjects () {
     viewProject ();
     //renderProject ();
-    //renderNextProject ();
+    renderNextProject ();
     returnToHomePage ();
 }
 
