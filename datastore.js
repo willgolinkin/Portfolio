@@ -7,8 +7,8 @@ const STORE = [
         <li><i class="fab fa-js"></i></li>
         <li><i class="fab fa-css3-alt"></i></li>`,
         description: "The EatKlean app allows you to track your food and exercise using the Nutritionix API",
-        github_repo: "https://github.com/willgolinkin/Nutritionix-API-Hack-Capstone",
-        web_page: "https://willgolinkin.github.io/Nutritionix-API-Hack-Capstone/",
+        github_repo: "https://github.com/willgolinkin/EatKlean",
+        web_page: "https://willgolinkin.github.io/EatKlean/",
         screenshot_one: "Img Assets\\EatKlean Search Results Screenshot_compressed.png",
         screenshot_two: "Img Assets\\EatKlean Home Page Screenshot_compressed.png"
     },
