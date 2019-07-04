@@ -18,7 +18,7 @@ body, html {
 
 main {
   /*sets line spacing to desired range of 120-150%*/
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .hero-image {
@@ -171,9 +171,14 @@ h1 {
 
 h2 {
   /*font-size: 20px;*/
-  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
   /*line-height also dyanmically re-sizing based on viewport*/
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
+.bio {
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+  width: 90%;
 }
 
 section {
@@ -185,7 +190,6 @@ section {
 section:nth-child(even) {
   background-color: white;
 }
-
 
 .viewProjectsButton {
 margin-left: auto;
@@ -322,25 +326,15 @@ img {
     width: 250px;
   }
 
+  .bio {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 85%;
+    line-height: 1.5;
+  }
 
-
-  /*h1 {
-    font-size: 35px;
-  }*/
-  
-  /*h2 {
-    font-size: 25px;
-  }*/
-
-  /*.returnHomeButton {
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: center;
-    align-items: center;
-    max-width: 250px;
-  }*/
-
-  .bio, .js-description {
+  .js-description {
     margin-left: auto;
     margin-right: auto;
     width: 600px;
