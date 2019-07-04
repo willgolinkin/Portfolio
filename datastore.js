@@ -6,7 +6,7 @@ const STORE = [
         `<li><i class="fab fa-html5"></i></li>
         <li><i class="fab fa-js"></i></li>
         <li><i class="fab fa-css3-alt"></i></li>`,
-        description: "The EatKlean app allows you to track your food and exercise using the Nutritionix API",
+        description: "The EatKlean app allows you to track the macro nutrients of your food and find out how many calories you burned during exercise using the Nutritionix API. You can also use the app to find nearby restaurants of a given cuisine using the Yelp Fusion API.",
         github_repo: "https://github.com/willgolinkin/EatKlean",
         web_page: "https://willgolinkin.github.io/EatKlean/",
         screenshot_one: "Img Assets\\EatKlean Home Page Screenshot_compressed.png",
